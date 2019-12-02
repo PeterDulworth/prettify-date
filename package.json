@@ -1,20 +1,10 @@
 {
-  "name": "beet-cl",
-  "version": "1.1.7",
-  "description": "another component library",
-  "main": "build/index.js",
+  "name": "prettify-date",
+  "version": "1.0.0",
+  "description": "js utility to convert js dates to human readable strs",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "start": "webpack-dev-server --open --mode development",
-    "storybook": "start-storybook -p 9001 -c storybook -s ./storybook/public",
-    "build-storybook": "build-storybook -c storybook -s ./storybook/public",
-    "lint": "eslint src",
-    "lint-fix": "eslint src --fix",
-    "test-bundlesize": "bundlesize",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "prettify",
@@ -25,14 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/PeterDulworth/prettify-date.git"
+    "url": "git+https://github.com/PeterDulworth/prettify-date.git"
   },
+  "author": "Peter Dulworth",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/PeterDulworth/prettify-date/issues"
   },
-  "homepage": "https://github.com/PeterDulworth/prettify-date#readme",
-  "author": "Peter Dulworth",
-  "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {}
+  "homepage": "https://github.com/PeterDulworth/prettify-date#readme"
 }
