@@ -4,7 +4,6 @@
 
 [![npm package](https://img.shields.io/npm/v/prettify-date.svg?color=1497ff)](npm)
 [![npm downloads](https://img.shields.io/npm/dw/prettify-date.svg?color=3d138d)](npm)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](prettier)
 
 If in last 1 minute return `just now`.
 
