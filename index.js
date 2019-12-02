@@ -5,7 +5,7 @@
  *
  * Note: date must be a date object (new Date(x)).
  */
-exports.format(date) = function() {
+exports.format = function(date) {
   const secondsSince = Math.floor((new Date() - date) / 1000);
   const secPerDay = 86400;
   const secPerHour = 3600;
