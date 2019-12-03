@@ -11,8 +11,8 @@ exports.format = function(date) {
   const secPerHour = 3600;
   const secPerMin = 60;
 
-  // time is over a day old
-  if (secondsSince > secPerDay) {
+  // time is over a two days old
+  if (secondsSince >= 2 * secPerDay) {
     const monthOptions = {
       month: 'long',
       day: 'numeric',
@@ -29,15 +29,20 @@ exports.format = function(date) {
     return `${monthDay} at ${hrMin}`;
   }
 
+  // time is over a day old
+  if (secondsSince >= secPerDay) {
+    return 'yesterday';
+  }
+
   // time is over an hour old
-  if (secondsSince > secPerHour) {
-    const hoursSince = Math.floor(secondsSince / 3600);
+  if (secondsSince >= secPerHour) {
+    const hoursSince = Math.floor(secondsSince / secPerHour);
     return `${hoursSince} hr${hoursSince > 1 ? 's' : ''}`;
   }
 
   // time is over a minute old
-  if (secondsSince > secPerMin) {
-    const minutesSince = Math.floor(secondsSince / 60);
+  if (secondsSince >= secPerMin) {
+    const minutesSince = Math.floor(secondsSince / secPerMin);
     return `${minutesSince} min${minutesSince > 1 ? 's' : ''}`;
   }
 
